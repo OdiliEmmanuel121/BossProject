@@ -1,0 +1,153 @@
+.rightbarContainer {
+    width: 25%;
+    min-height: 100vh;
+    background-color: rgb(255, 253, 253);
+    padding: 20px 0;
+    box-shadow: 4px 0 5px rgba(30, 10, 0, 0.1);
+
+}
+
+.firstItem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: sans-serif;
+    gap: 60px;
+
+}
+
+.productCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+    height: 124px;
+    margin-left: 16px;
+    margin-top: 10px;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(103, 159, 210, 0.24);
+    border-radius: 8px;
+
+}
+
+.foodImage {
+    width: 114px;
+    height: 106px;
+    margin-left: 10px;
+    top: 160px;
+    border-radius: 8px;
+
+}
+
+.IncreDecre {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 9px;
+}
+
+.buttonItem {
+    width: 160px;
+    height: 31px;
+    text-align: center;
+    border: none;
+
+    color: white;
+    padding: 5px 30px 5px 30px;
+    background: #FF8E8E;
+    border-radius: 4px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 146.69%;
+    /* identical to box height, or 18px */
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.checkoutBotton {
+    display: flex;
+    margin-top: 40px;
+    width: 250px;
+    height: 30px;
+    padding-bottom: 1px;
+    margin-left: 40px;
+
+}
+
+.cardContent {
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: smaller;
+    margin-top: 5px;
+
+}
+
+.card-button20 {
+    width: 380px;
+    height: 40px;
+    padding-bottom: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    /* or 150% */
+    text-align: center;
+    background: linear-gradient(90.91deg, #2972B5 0.28%, #90E0FC 111.21%), #C4C4C4;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.card-button20:hover {
+    color: #21629e;
+    background: linear-gradient(90.91deg, #C4C4C4 0.28%, #90E0FC 111.21%), #2972B5;
+}
+
+.p1tag {
+    color: rgba(0, 0, 0, 1);
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+
+    line-height: 147%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    width: 228;
+    height: 21;
+    top: 450px;
+    left: 1171px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.BlurImage {
+    position: absolute;
+    justify-content: center;
+    z-index: 1;
+}
+
+.BlurImage1 {
+    width: 260px;
+    height: 280px;
+    margin-left: 40px;
+}
+
+.RectangleImage {
+    width: 290px;
+    height: 70px;
+    margin-top: 95px;
+    margin-left: 27px;
+}

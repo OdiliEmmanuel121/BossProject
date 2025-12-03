@@ -1,0 +1,175 @@
+DistributionContainer {
+    width: 60%;
+    height: 100%;
+    margin-left: 203px;
+    text-align: center;
+    padding: 0;
+}
+
+.DistFirstSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    gap: 22px;
+    margin-left: 99.5px;
+}
+
+
+.DistFirstSection h4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140.69%;
+    /* identical to box height, or 22px */
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #3a2d2d;
+}
+
+.DistFirstSection p {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 146.69%;
+    /* identical to box height, or 22px */
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(103, 159, 210, 1);
+
+}
+
+
+.Distbutton {
+    width: 150px;
+    height: 30px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    /* or 150% */
+    text-align: center;
+    background: linear-gradient(90.91deg, #2972B5 0.28%, #90E0FC 111.21%), #C4C4C4;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Distsearcheng {
+    border: 1.5px solid #403939;
+    border-radius: 2.5px;
+    width: 300px;
+    height: 30px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 12px;
+    text-align: center;
+    background-color: #e6dede;
+    border-radius: 4px;
+    border: none;
+    color: #403939
+}
+
+.DistSecondSection {
+    margin-left: 120px;
+    margin-top: 30px;
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.DistThirdSection {
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(131, 131, 131, 1);
+    font-family: sans-serif;
+    margin-left: 120px;
+}
+.DistCheckbox{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 60px;
+}
+.DistBoxSection1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 90px;
+    gap: 40px;
+}
+
+.DistBoxSection2 {
+    display: flex;
+    justify-content: left;
+    gap: 70px;
+    margin-left: 120px;
+}
+
+
+.DistcardBox {
+    width: 190px;
+    height: 172px;
+    left: 308px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.Distcard-image4,
+.Distcard-image5,
+.Distcard-image2,
+.Distcard-image6,
+.Distcard-image9 {
+    width: 180px;
+    height: 162px;
+    border-radius: 5px;
+    margin-left: 4.5px;
+    margin-top: 4.5px;
+}
+
+.ClassDistbutton1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.Distbutton1 {
+    width: 250px;
+    height: 30px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    background: #2972B5;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}

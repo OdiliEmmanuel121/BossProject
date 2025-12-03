@@ -1,0 +1,91 @@
+.SaveditemContainer {
+  width: 60%;
+    height: 100%;
+    margin-left: 180px;
+    text-align: center;
+    padding: 0;
+}
+.SavFirstSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    gap: 22px;
+    margin-right: 30px;
+}
+.SavFirstSection h4{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140.69%;
+    /* identical to box height, or 22px */
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #3a2d2d;
+}
+.SavFirstSection p {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 146.69%;
+    /* identical to box height, or 22px */
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(103, 159, 210, 1);
+
+}
+.Savbutton {
+    width: 150px;
+    height: 30px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    
+    text-align: center;
+    background: linear-gradient(90.91deg, #2972B5 0.28%, #90E0FC 111.21%), #C4C4C4;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Savbutton:hover {
+    background-color:#FFFFFF;
+    color: #2972B5
+}
+
+
+
+.Savsearcheng{
+    border: 1.5px solid #403939;
+    border-radius: 2.5px;
+    width: 300px;
+    height: 30px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 12px;
+    text-align: center;
+    background-color: #e6dede;
+    border-radius: 4px;
+    border: none;
+
+    color: #403939;
+}
+
+.SavBoxSetion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: -10px;
+    margin-top: 20px;
+}
