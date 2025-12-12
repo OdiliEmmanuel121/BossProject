@@ -1,6 +1,6 @@
-import Rightbar from '../../../common/rightbar/rightbar'
+import Rightbar from '../../../common/rightbar/Rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
-import Wallet from '../../../Wallet/Wallet'
+import Wallet from '../../../wallet/Wallet'
 
 import './WalletLayout.css'
 
