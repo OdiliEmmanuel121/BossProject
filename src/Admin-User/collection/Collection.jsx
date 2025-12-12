@@ -1,4 +1,4 @@
-import "./Collections.css"
+import "./Collection.css"
 import { AccountCircle, ConnectedTvRounded, ConnectWithoutContact, ConnectWithoutContactSharp, Search, Share, ShoppingBag } from '@mui/icons-material';
 import Box from '@mui/material/Box';
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -28,7 +28,7 @@ import damask1 from '../../assets/damask1.jpg'
 
 
 
-const collection = () => {
+const Collection = () => {
   return (
     <div className='CollectionsContainer'>
       <div className='CollFirstSection'>
@@ -212,4 +212,4 @@ const collection = () => {
   )
 }
 
-export default collection
+export default Collection;

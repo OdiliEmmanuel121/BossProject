@@ -1,19 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Layout from './Admin-User/dashboard/generallayout/layout/Layout'
 import Distributionlayout from './Admin-User/dashboard/generallayout/distributionlayout/Distributionlayout'
 import Distribution from './Admin-User/distrubution/Distribution'
 import SavedItems from './Admin-User/saveditems/SavedItems'
-import Saveditemslayout from './Admin-User/dashboard/generallayout/saveditemslayout/Saveditemslayout'
-import Collections from './Admin-User/collection/Collections'
 import Wallet from './Admin-User/wallet/Wallet'
 import Profile from './Admin-User/profile/Profile'
 import Profilelayout from './Admin-User/dashboard/generallayout/profilelayout/Profilelayout'
-import Collectionslayout from './Admin-User/dashboard/generallayout/collectionslayout/Collectionslayout'
-import Walletlayout from './Admin-User/dashboard/generallayout/walletlayout/Walletlayout'
+import Layout from './Admin-User/dashboard/generallayout/Layout/Layout'
+import Saveditemslayout from './Admin-User/dashboard/generallayout/Saveditemslayout/Saveditemslayout'
+import Walletlayout from './Admin-User/dashboard/generallayout/walletlayout/walletlayout'
 import Contactsupportlayout from './Admin-User/dashboard/generallayout/contactsupportlayout/Contactsupportlayout'
-import Contactsupport from './Admin-User/contactsupport/Contactsupport'
+import Contactsupport from './Admin-User/Contactsupport/Contactsupport'
 import Dashboard from './Admin-User/dashboard/Dashboard'
+import Collectionslayout from './Admin-User/dashboard/generallayout/collectionslayout/Collectionslayout'
+import Collection from './Admin-User/collection/Collection'
+
 
 
 
@@ -30,14 +31,13 @@ const App = () => {
           <Route path='/' element={<Layout />} />
 
           <Route path='/Saveditems' element={<SavedItems />} />
-          <Route path='Sav' element={<Saveditemslayout />} />
+          <Route path='Sav' element={<Saveditemslayout/>} />
 
           <Route path='/distribution' element={<Distribution />} />
           <Route path='/Distru' element={<Distributionlayout />} />
 
-          <Route path='/collections' element={<Collections />} />
-          <Route path='/col' element={<Collectionslayout/>} />
-
+          <Route path='/collections' element={<Collection/>} />
+          <Route path='/col' element={<Collectionslayout/>} />  
           <Route path='/wallet' element={<Wallet />} />
           <Route path='/Wall' element={<Walletlayout />} />
 

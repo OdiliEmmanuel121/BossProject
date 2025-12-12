@@ -1,4 +1,5 @@
-import Rightbar from '../../../common/rightbar/RightBar'
+
+import Rightbar from '../../../common/rightbar/rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
 import Profile from '../../../profile/Profile'
 

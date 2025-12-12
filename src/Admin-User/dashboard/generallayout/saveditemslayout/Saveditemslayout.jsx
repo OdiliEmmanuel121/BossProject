@@ -1,6 +1,7 @@
+import Rightbar from '../../../common/rightbar/rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
 import Saveditems from "../../../saveditems/SavedItems"
-import Rightbar from '../../../common/rightbar/RightBar'
+
 import './Saveditemslayout.css'
 
 

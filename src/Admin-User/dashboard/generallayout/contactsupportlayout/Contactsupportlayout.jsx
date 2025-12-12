@@ -1,6 +1,7 @@
-import Rightbar from '../../../common/rightbar/RightBar'
+// import '/Contactsupportlayout.css'
+import Rightbar from '../../../common/rightbar/rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
-import Contactsupport from '../../../contactsupport/Contactsupport'
+import Contactsupport from '../../../Contactsupport/Contactsupport'
 
 
 

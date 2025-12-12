@@ -1,5 +1,6 @@
+import './Distributionlayout.css'
 
-import Rightbar from "../../../common/rightbar/RightBar"
+import Rightbar from "../../../common/rightbar/rightbar"
 import Sidebar from "../../../common/sidebar/Sidebar"
 import Distribution from "../../../distrubution/Distribution"
 
