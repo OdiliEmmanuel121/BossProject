@@ -1,6 +1,6 @@
 import Rightbar from '../../../common/rightbar/rightbar'
 import Sidebar from '../../../common/sidebar/Sidebar'
-import Contactsupport from '../../../Contactsupport/Contactsupport'
+import Contactsupport from '../../../contactsupport/Contactsupport'
 
 
 

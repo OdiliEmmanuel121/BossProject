@@ -12,7 +12,7 @@ import Profilelayout from './Admin-User/dashboard/Dashboardlayout/profilelayout/
 import Collectionslayout from './Admin-User/dashboard/Dashboardlayout/collectionslayout/Collectionslayout'
 import Walletlayout from './Admin-User/dashboard/Dashboardlayout/walletlayout/Walletlayout'
 import Contactsupportlayout from './Admin-User/dashboard/Dashboardlayout/contactsupportlayout/Contactsupportlayout'
-import Contactsupport from './Admin-User/Contactsupport/Contactsupport'
+import Contactsupport from './Admin-User/contactsupport/Contactsupport'
 import Dashboard from './Admin-User/dashboard/Dashboard'
 
 
