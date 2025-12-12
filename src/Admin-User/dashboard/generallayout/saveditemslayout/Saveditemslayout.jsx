@@ -1,5 +1,5 @@
 import Sidebar from '../../../common/sidebar/Sidebar'
-import Saveditems from "../../../savedItems/SavedItems"
+import Saveditems from "../../../saveditems/SavedItems"
 import Rightbar from '../../../common/rightbar/RightBar'
 import './Saveditemslayout.css'
 
