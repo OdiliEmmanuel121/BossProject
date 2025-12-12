@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Dashboard from "./Admin-User/dashboard/dashboard"
+import Dashboard from "./Admin-User/Dashboard/Dashboard.jsx";
 import Layout from './Admin-User/dashboard/Dashboardlayout/Layout/Layout'
 import Distributionlayout from './Admin-User/dashboard/Dashboardlayout/distributionlayout/Distributionlayout'
 import Distribution from './Admin-User/distrubution/Distribution'

@@ -23,8 +23,8 @@ const Dashboard = () => {
         <h4> Good morning</h4>
         <p> Emmanuel </p>
         <AccountCircle />
-        <input type="Search" placeholder='Search items' className='searcheng' />
-        <a href="#" className="button"> Search </a>
+        <input type="Search" placeholder='Search items' className='Firstsearcheng' />
+        <a href="#" className="Firstbutton"> Search </a>
         
       </div>
 

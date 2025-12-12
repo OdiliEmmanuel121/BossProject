@@ -22,12 +22,12 @@ import vintage3 from  '../../assets/vintage3.jpg'
 const SavedItems = () => {
   return (
     <div className='SaveditemContainer'>
-      <div className='FirstSection'>
+      <div className='SavFirstSection'>
         <h4> Good morning</h4>
         <p> Emmanuel </p>
         <AccountCircle />
-        <input type="Search" placeholder='Search items' className='searcheng' />
-        <a href="#" className="button"> Search </a>
+        <input type="Search" placeholder='Search items' className='Savsearcheng' />
+        <a href="#" className="Savbutton"> Search </a>
       </div>
       <div className='SavpSection'>
         <p> Saved Items</p>

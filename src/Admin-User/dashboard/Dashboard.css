@@ -4,7 +4,7 @@
     margin-left: 210px;
     text-align: center;
     padding: 15px;
-    
+
 
 }
 
@@ -45,7 +45,7 @@
 }
 
 
-.button {
+.Firstbutton {
     width: 150px;
     height: 30px;
     padding-bottom: 25px;
@@ -56,19 +56,19 @@
     line-height: 30px;
     /* or 150% */
     text-align: center;
-    background-color:  #2972B5;
+    background-color: #2972B5;
     border-radius: 6px;
     border: none;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.button:hover {
-    background-color:#115697;
+.Firstbutton:hover {
+    background-color: #115697;
     color: #ffffff
 }
 
-.searcheng {
+.Firstsearcheng {
     border: 1.5px solid #403939;
     border-radius: 2.5px;
     width: 300px;
@@ -199,7 +199,7 @@
 .card1,
 .card2,
 .card3 {
-    
+
     box-shadow: 3px 15px 40px 0px rgba(0, 0, 0, 0.2);
     background: rgba(255, 255, 255, 1);
     width: 240px;
@@ -207,7 +207,7 @@
     top: 1087px;
     left: 6512px;
     border-radius: 10px;
-   
+
 
 
 }
@@ -232,7 +232,9 @@
     padding-top: 5px;
 
 }
-.card-image2, .card-image3 {
+
+.card-image2,
+.card-image3 {
     display: flex;
     justify-content: center;
     padding: 3px 3px;
@@ -258,7 +260,8 @@
     padding-top: 5px;
 
 }
-.card-image6{
+
+.card-image6 {
     display: flex;
     justify-content: center;
     padding: 3px 3px;
@@ -326,12 +329,12 @@
 .card-button3 {
     display: flex;
     justify-content: center;
-     padding: 2.5px 2.5px;
+    padding: 2.5px 2.5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
     font-size: 15px;
     font-weight: 700;
-     width: 225px;
+    width: 225px;
     height: 30px;
     padding-bottom: 20px;
     font-family: sans-serif;
@@ -355,132 +358,203 @@
     color: #FFFFFF;
 }
 
-/*
-======================================================
-📱 MOBILE STYLES (Max 768px)
-======================================================
-*/
 
-@media (max-width: 768px) {
 
-    /* --- Primary Container Reset --- */
+@media (max-width: 767px) {
+
+    /* 1. CONTAINER MODIFICATIONS */
     .dashboardContainer {
-        /* Remove desktop-specific width and margin */
-        width: 100%; 
-        margin-left: 0;
-        padding: 10px; /* Reduce padding */
-        text-align: left; /* Align text left for better readability on mobile */
-    }
-
-    /* --- First Section (Header/Search) --- */
-    .FirstSection {
-        /* Stack the items vertically */
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start; /* Align all items to the start */
-        margin: 10px 0; /* Reduce vertical margin */
-        gap: 15px;
-    }
-
-    /* Ensure the search bar takes full width */
-    .searcheng {
-        width: 100%; 
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        height: 40px; /* Increase height for better touch target */
-        margin-top: 10px;
-        text-align: left;
-        padding-left: 15px;
-    }
-
-    /* Make the button take full width below the search bar or header text */
-    .button {
         width: 100%;
-        height: 40px;
-        line-height: 40px; /* Center text vertically */
-        padding-bottom: 0; /* Remove existing padding bottom */
-        margin-top: 10px;
-        font-size: 16px; /* Slightly larger font */
-    }
-
-    /* --- Second Section (Info Boxes) --- */
-    .SecondSetion {
-        /* Stack the info boxes vertically */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; /* Center items horizontally */
-        margin-top: 15px;
-        gap: 20px; /* Space between the stacked boxes */
-    }
-
-    /* General Box Styling for mobile consistency */
-    .Box01,
-    .Box02,
-    .Box03 {
-        width: 100%; /* Take full width of the parent container */
+        /* Full width */
+        margin-left: 0;
+        /* Remove sidebar offset */
+        padding: 10px;
         box-sizing: border-box;
-        /* Consolidate padding for consistency */
-        padding: 20px;
-        /* Reset padding overrides that were specific to desktop layout */
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        
-        margin: 0; /* Remove any previous margin conflicts */
+        padding-top: 10px;
+        /* Reduce top padding */
+        margin-top: 30px;
     }
-    
-    /* Ensure text within the boxes is readable */
+
+    /* 2. HEADER/SEARCH SECTION (FirstSection) */
+    .FirstSection {
+       
+        flex-wrap: wrap;
+        justify-content: space-evenly
+        margin: 10px 0;
+        gap: 2px;
+        margin-left: 0;
+        padding: 0 5px;
+    }
+
+    /* Adjust font and alignment */
+    .FirstSection h4,
+    .FirstSection p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* Make search and button fit nicely */
+    .Firstsearcheng {
+        width: 50%;
+        /* Input takes most of the space */
+        height: 30px;
+        font-size: 12px;
+        order: 4;
+    }
+
+    .Firstbutton {
+        width: 90%;
+        height: 30px;
+        padding-bottom: 0;
+        line-height: 30px;
+        font-size: 12px;
+        order: 5;
+        /* margin-left: 30px; */
+        padding-left: 200px;
+        padding-right: 240px;
+    }
+
+    /* 3. PRIMARY INFO BOXES (SecondSetion) */
+    .SecondSetion {
+        /* Change from horizontal row to single column stack */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0 5px;
+        gap: 10px;
+    }
+
+    .Box01,
+    .Box02 {
+        /* Make boxes full width */
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+
+        /* Remove large fixed padding */
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+
+    .Box03 {
+        /* Make boxes full width */
+        width: 100%;
+        padding: 22px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+
     .SecondSetion h3 {
-        text-align: center;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+
     }
 
-    /* --- Latest Trend/Card Section --- */
+    .Vector1,
+    .Vector2,
+    .Vector3 {
+        width: 15px;
+        height: 15px;
+        margin-left: 40px;
+    }
+
+
+    /* 4. LATEST TRENDS HEADING */
     .LatestTrend {
-        margin: 20px 0 10px 10px; /* Adjust margin for mobile */
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: large;
     }
 
-    /* Stack all cards vertically and remove negative margin/gap */
+    /* 5. THREE-COLUMN CARD LAYOUT (BoxSection and BoxSection2) */
+
     .BoxSection,
     .BoxSection2 {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px; /* Normal spacing */
-        gap: 25px; /* Space between cards */
+        /* Reset display and spacing */
+        display: grid;
+        gap: 8px;
+        /* Gap between cards */
+        margin: 10px 0;
+        margin-top: 10px;
+        /* Adjust top margin for all */
+
+        /* Define 3 columns, each taking up an equal fraction of the space */
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 5px;
     }
 
-    /* Reset the huge margin-top used for .BoxSection2 */
-    .BoxSection2 {
-        margin-top: 25px; 
+    /* Ensure all card containers use the space efficiently */
+    .cardBox {
+        width: 100%;
+        /* Fill the grid column */
+        height: auto;
+        box-shadow: none;
+        /* Remove unnecessary box shadow on the wrapper */
     }
 
-    /* Card Sizing - Ensure cards fit screen width, maybe a max-width if needed */
+    /* Card sizing and image scaling */
     .card1,
     .card2,
     .card3 {
-        width: 90%; /* Use most of the screen width */
-        max-width: 350px; /* Optional: cap the max size */
-        height: auto; /* Let content dictate height */
+        width: 100%;
+        height: 140px;
+        /* Reduced height for 3-column view */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* Reduced shadow */
+        border-radius: 8px;
     }
 
-    /* Adjust image and button sizes relative to the new card width */
     .card-image1,
     .card-image2,
     .card-image3,
     .card-image4,
     .card-image5,
     .card-image6 {
-        width: calc(100% - 10px); /* Fill card width minus horizontal margin/padding */
-        height: 150px; /* Use a fixed height for images */
+        width: calc(100% - 10px);
+        /* Adjust width to account for small padding */
+        height: 70px;
+        /* Fixed height for consistent image size */
+        margin: 0 auto;
+        padding: 5px 0;
+        object-fit: cover;
+        /* Ensures image covers area without distortion */
+    }
+
+    /* Content and Button Adjustments */
+    .card-title1,
+    .card-title2,
+    .card-title3 {
+        gap: 10px;
+        /* Reduce gap */
+        justify-content: center;
+        font-size: 8px;
+        /* Smaller font */
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .card-text1,
+    .card-text2,
+    .card-text3 {
+        font-size: 7px;
         margin-left: 5px;
-        padding-top: 5px;
+        margin-right: 5px;
+        padding: 0;
     }
 
     .card-button1,
     .card-button2,
     .card-button3 {
-        width: calc(100% - 15px); /* Fill card width minus horizontal margin/padding */
-        margin-left: 7.5px;
-        font-size: 14px;
-        height: 40px;
-        line-height: 40px; /* Vertically center text */
-        padding-bottom: 0;
+        width: calc(100% - 10px);
+        height: 20px;
+        line-height: 20px;
+        font-size: 8px;
+        padding-bottom: 20px;
+        margin: 5px auto;
     }
 }

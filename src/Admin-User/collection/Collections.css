@@ -6,7 +6,7 @@
       padding: 15px;
   }
 
-  .FirstSection {
+  .CollFirstSection {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -15,7 +15,7 @@
   }
 
 
-  .FirstSection h4 {
+  .CollFirstSection h4 {
       font-family: sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -28,7 +28,7 @@
       color: #3a2d2d;
   }
 
-  .FirstSection p {
+  .CollFirstSection p {
       font-family: sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -43,7 +43,7 @@
   }
 
 
-  .button {
+  .Collbutton {
       width: 150px;
       height: 30px;
       padding-bottom: 25px;
@@ -61,12 +61,12 @@
       text-decoration: none;
   }
 
-  .button:hover {
+  .Collbutton:hover {
       background-color: #115697;
       color: #ffffff
   }
 
-  .searcheng {
+  .Collsearcheng {
       border: 1.5px solid #403939;
       border-radius: 2.5px;
       width: 300px;
@@ -131,7 +131,119 @@
 
   }
 
-  .CollFourtSection{
-    margin-top: 20px;
-    margin-left: -8px;
+  .CollFourtSection {
+      margin-top: 20px;
+      margin-left: -8px;
+  }
+
+  @media (max-width: 767px) {
+
+      /* 1. CONTAINER MODIFICATIONS */
+      .CollectionsContainer {
+         width: 100%; /* Full width */
+        margin-left: -114px; /* Remove sidebar offset */
+        padding: 10px;
+        box-sizing: border-box;
+        padding-top: 10px; /* Reduce top padding */
+        margin-top: 30px;
+        
+      }
+
+      /* 2. HEADER/SEARCH SECTION (FirstSection) */
+      .CollFirstSection {
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin: 10px 0; 
+        gap: 7px;
+        margin-left: 4px; 
+        padding: 0 5px;
+      }
+
+      /* Adjust text size for mobile */
+      .CollFirstSection h4,
+      .CollFirstSection p {
+           font-size: 14px;
+        margin: 0;
+      }
+
+      /* Make search and button fit nicely, stacking on a new line */
+      .Collsearcheng {
+        width: 50%; /* Input takes most of the space */
+        height: 30px;
+        font-size: 12px;
+        order: 4;
+      }
+
+      .Collbutton {
+           width: 30%;
+        height: 30px;
+        padding-bottom: 0;
+        line-height: 30px;
+        font-size: 12px;
+        order: 5;
+        /* margin-left: 30px; */
+        padding-left: 200px;
+        padding-right: 240px;
+      }
+
+      /* Remove padding-bottom from button for consistent height on mobile */
+      .Collbutton {
+          padding-bottom: 0;
+      }
+
+      /* 3. PRIMARY HEADING/PARAGRAPH (CollSecondSection) */
+      .CollSecondSection p {
+          /* Reset all desktop offsets */
+          margin-left: 15px;
+          padding-top: 10px;
+
+          /* Adjust alignment and style for mobile */
+          justify-content: flex-start;
+          /* Align text to the left */
+          text-align: left;
+          font-size: 16px;
+          font-weight: 700;
+          padding-bottom: 5px;
+          padding-left: 5px;
+      }
+
+      /* 4. BUTTON/LINK SECTION (CollThirdSection) */
+      .CollThirdSection {
+          /* Allow wrapping for overflow buttons */
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          /* Align to the left */
+          margin-left: 0;
+          /* Remove desktop offset */
+          gap: 8px;
+          /* Reduced gap */
+          padding: 0 5px;
+      }
+
+      .CollButton1,
+      .CollButton2,
+      .CollButton3,
+      .CollButton4,
+      .CollButton5,
+      .CollButton6 {
+          /* Reset margins and reduce font size */
+          margin-left: 0;
+          margin-right: 0;
+          font-size: 12px;
+          /* Make the buttons look like tabs */
+          padding: 5px 10px;
+          border: 1px solid rgba(26, 16, 54, 0.1);
+          border-radius: 20px;
+          white-space: nowrap;
+          /* Prevent breaking inside the button text */
+      }
+
+      /* 5. GENERAL MARGINS */
+      .CollFourtSection {
+          margin-top: 10px;
+          /* Reduced top margin */
+          margin-left: 0;
+          /* Remove desktop offset */
+          padding: 0 5px;
+      }
   }

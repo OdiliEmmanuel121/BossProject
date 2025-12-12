@@ -44,7 +44,7 @@
   }
 
 
-  .button {
+  .Wallbutton {
       width: 150px;
       height: 30px;
       padding-bottom: 25px;
@@ -62,12 +62,12 @@
       text-decoration: none;
   }
 
-  .button:hover {
+  .Wallbutton:hover {
       background-color: #115697;
       color: #ffffff
   }
 
-  .searcheng {
+  .Wallsearcheng {
       border: 1.5px solid #403939;
       border-radius: 2.5px;
       width: 300px;
@@ -107,3 +107,100 @@
       margin-top: 20px;
       margin-right: 730px;
   }
+
+  @media (max-width: 767px) {
+    
+    /* 1. CONTAINER MODIFICATIONS */
+    .WalletContainer {
+           width: 100%; /* Full width */
+        margin-left: -80px; /* Remove sidebar offset */
+        padding: 10px;
+        box-sizing: border-box;
+        padding-top: 10px; /* Reduce top padding */
+        margin-top: 30px;
+    }
+
+    /* 2. HEADER/SEARCH SECTION */
+    .WallFirstSection {
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin: 10px 0; 
+        gap: 7px;
+        margin-left: 0; 
+        padding: 0 5px;
+    }
+
+    /* Adjust font size for better fit */
+    .WallFirstSection h4, .WallFirstSection p {
+         font-size: 14px;
+        margin: 0;
+    }
+
+    /* Make search and button fit nicely, stacking */
+    .Wallsearcheng {
+      width: 50%; /* Input takes most of the space */
+        height: 30px;
+        font-size: 12px;
+        order: 4;
+    }
+    
+    .Wallbutton {
+         width: 30%;
+        height: 30px;
+        padding-bottom: 0;
+        line-height: 30px;
+        font-size: 12px;
+        order: 5;
+        /* margin-left: 30px; */
+        padding-left: 200px;
+        padding-right: 250px;
+        
+    }
+    
+    .Wallbutton:hover {
+        /* Keep hover effects */
+        background-color: #115697;
+        color: #ffffff
+    }
+
+
+    /* 3. PRIMARY HEADING */
+    .WallpSection {
+        /* Reset all desktop offsets */
+        margin-left: 0; 
+        padding-top: 15px;
+        
+        /* Adjust alignment and style for mobile */
+        justify-content: flex-start; /* Align text to the left */
+        text-align: left;
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 5px;
+    }
+
+    .WallpSection p {
+        margin-left: 10px;
+    }
+
+    /* 4. SINGLE-COLUMN CARD LAYOUT (Stacked) */
+    .Wallcard1 {
+        /* Change from flex (desktop row) to simple stacking for mobile */
+        display: flex;
+        margin: 10px 0;
+        margin-right: 130px;
+        gap: 20px; /* No gap needed for stacked layout */
+        padding: 0 5px;
+    }
+
+    /* If your individual card elements have a fixed width, you'd make them 100% here:
+    .Wallcard1 > div {
+        width: 100%;
+        margin-bottom: 10px; // Add space between stacked cards
+    }
+    */
+
+    .atmimage1, .atmimage2{
+        width: 150px;
+        height: 100px;
+    }
+}

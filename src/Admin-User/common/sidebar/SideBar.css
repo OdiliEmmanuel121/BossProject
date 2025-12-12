@@ -78,44 +78,79 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     
-    /* 1. HIDE THE SIDEBAR OFF-SCREEN BY DEFAULT */
+    /* 1. HEADER CONTAINER: Fixed at the top, over everything */
+    /* Assuming your main page header is *not* inside .boxContainer.
+       If .boxContainer IS the main header, adjust its positioning. */
     .boxContainer {
-        /* Take up most of the width, allowing a small margin */
-        width: 85%; 
-        left: -85%; /* Hide it off-screen (must match the width) */
-        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3); /* Stronger shadow when open */
-        z-index: 50; /* Ensure it overlays content */
-        /* Make sure it scrolls vertically if the content is too long */
-        overflow-y: auto; 
-    }
-
-    /* 2. SLIDE THE SIDEBAR INTO VIEW WHEN THE 'mobile-open' CLASS IS ADDED */
-    .boxContainer.mobile-open {
-        left: 0; /* Brings the menu into the viewport */
-    }
-
-    /* 3. IMPROVE TOUCH TARGETS AND SPACING */
-    
-    .PICTURELOGO {
-        width: 80px; /* Slightly smaller logo */
-        margin: 20px auto 25px auto; /* Adjusted margins */
-    }
-
-    .sidebar .new {
-        padding: 15px 25px; /* Increased vertical padding for better touch targets */
-        font-size: 17px; /* Slightly larger font */
+        width: 100%;
+        height: auto;
+        position: fixed; /* Fix the main container to the top */
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        background-color: transparent; 
+        z-index: 1001; /* Higher than the menu content */
     }
     
-    /* 4. FIX LOGOUT SECTION ALIGNMENT */
-    .logoutandIcon {
-        /* Remove desktop alignment fixes */
-        margin-left: 0; 
-        margin-top: 50px; /* Reduced top margin */
-        justify-content: flex-start; /* Align link text to the left */
-        padding: 0 25px; /* Use the same side padding as the links */
+    /* 2. HEADER: Contains the Hamburger Icon */
+    .sidebar-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+       margin-left: -420px;
+       padding-bottom: 30px;
+        /* Keep the header transparent or give it a background if desired */
+        width: 100%; 
+        box-shadow: none;
+        position: relative; /* Needed for z-index stacking */
+        z-index: 1002; /* Ensure the icon is on top of the menu when open */
+    }
+    
+    /* Hide any content next to the hamburger icon */
+    .sidebar-header > *:not(.bar) {
+        display: none !important;
+    }
+    
+    /* 3. SHOW/HIDE TOGGLE BUTTON */
+    .sidebar-header .bar {
+        display: block; 
+        cursor: pointer;
+        padding: 5px;
+        font-size: 24px;
+        color: #333435;
+    }
+    
+    /* 4. CONTENT: Hidden by default (collapsed state) */
+    .sidebar-content {
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        
+        /* OVERLAY STYLES */
+        position: fixed; /* Crucial change: Fixed position relative to viewport */
+        top: 0; 
+        left: 0;
+        width: 40%;
+        height: 80%;  /* Make it take up the full viewport height */
+        background-color: #ffffff; 
+        /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+        z-index: 1000; /* Must be lower than the icon, but higher than page content */
+        padding-top: 50px; /* Push content below the fixed hamburger icon */
     }
 
-
+    /* 5. CONTENT: Visible when the 'mobile-open' class is active */
+    .boxContainer.mobile-open .sidebar-content {
+        max-height: 100vh; /* Set to full height to ensure all links show */
+        overflow-y: auto; /* Allow scrolling within the menu if many links exist */
+    }
+    
+    /* 6. LOGOUT POSITION */
+    .sidebar-content .logoutandIcon {
+        position: relative;
+        margin-top: 15px;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+    }
 }

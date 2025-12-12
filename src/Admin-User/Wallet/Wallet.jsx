@@ -10,8 +10,8 @@ const Wallet = () => {
         <h4> Good morning</h4>
         <p> Emmanuel </p>
         <AccountCircle />
-        <input type="Search" placeholder='Search items' className='searcheng' />
-        <a href="#" className="button"> Search </a>
+        <input type="Search" placeholder='Search items' className='Wallsearcheng' />
+        <a href="#" className="Wallbutton"> Search </a>
       </div>
       <div className='WallpSection'>
         <p> Saved Items</p>
@@ -19,8 +19,8 @@ const Wallet = () => {
 
       <div>
         <div className="Wallcard1">
-          <img src={atmimage} alt="Beans and Plantain" className="atmimage" />
-          <img src={atmimage} alt="Beans and Plantain" className="atmimage" />
+          <img src={atmimage} alt="Beans and Plantain" className="atmimage1" />
+          <img src={atmimage} alt="Beans and Plantain" className="atmimage2" />
         </div>
       </div>
     </div >

@@ -31,12 +31,12 @@ import damask1 from '../../assets/damask1.jpg'
 const collection = () => {
   return (
     <div className='CollectionsContainer'>
-      <div className='FirstSection'>
+      <div className='CollFirstSection'>
         <h4> Good morning</h4>
         <p> Emmanuel </p>
         <AccountCircle />
-        <input type="Search" placeholder='Search items' className='searcheng' />
-        <a href="#" className="button"> Search </a>
+        <input type="Search" placeholder='Search items' className='Collsearcheng' />
+        <a href="#" className="Collbutton"> Search </a>
       </div>
       <div className="CollSecondSection">
         <p>Collection</p>
