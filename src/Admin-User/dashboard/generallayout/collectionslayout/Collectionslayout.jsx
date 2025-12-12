@@ -1,7 +1,7 @@
 import Sidebar from '../../../common/sidebar/Sidebar'
 import Collections from '../../../collection/Collections'
 import './Collectionslayout.css'
-import Rightbar from '../../../common/rightbar/Rightbar'
+import Rightbar from '../../../common/rightbar/RightBar'
 
 
 const Collectionslayout = () => {

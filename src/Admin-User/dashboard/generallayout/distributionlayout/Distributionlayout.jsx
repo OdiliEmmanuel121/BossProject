@@ -1,5 +1,5 @@
 
-import Rightbar from "../../../common/rightbar/Rightbar"
+import Rightbar from "../../../common/rightbar/RightBar"
 import Sidebar from "../../../common/sidebar/Sidebar"
 import Distribution from "../../../distrubution/Distribution"
 
