@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Dashboard from "./Admin-User/Dashboard/Dashboard.jsx";
+
 import Layout from './Admin-User/dashboard/Dashboardlayout/Layout/Layout'
 import Distributionlayout from './Admin-User/dashboard/Dashboardlayout/distributionlayout/Distributionlayout'
 import Distribution from './Admin-User/distrubution/Distribution'
@@ -13,6 +13,9 @@ import Collectionslayout from './Admin-User/dashboard/Dashboardlayout/collection
 import Walletlayout from './Admin-User/dashboard/Dashboardlayout/walletlayout/walletlayout'
 import Contactsupportlayout from './Admin-User/dashboard/Dashboardlayout/contactsupportlayout/contactsupportlayout'
 import Contactsupport from './Admin-User/Contactsupport/Contactsupport'
+import Dashboard from './Admin-User/dashboard/Dashboard'
+
+
 
 
 
@@ -23,7 +26,7 @@ const App = () => {
       <BrowserRouter>
         {/* <Sidebar /> */}
         <Routes>
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/ dashboard' element={<Dashboard/>} />
           <Route path='/' element={<Layout />} />
 
           <Route path='/Saveditems' element={<SavedItems />} />

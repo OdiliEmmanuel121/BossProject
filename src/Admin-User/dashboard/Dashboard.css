@@ -377,9 +377,8 @@
 
     /* 2. HEADER/SEARCH SECTION (FirstSection) */
     .FirstSection {
-       
         flex-wrap: wrap;
-        justify-content: space-evenly
+        justify-content: center;
         margin: 10px 0;
         gap: 2px;
         margin-left: 0;
